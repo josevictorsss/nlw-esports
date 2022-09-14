@@ -42,7 +42,7 @@ app.post('/games/:id/ads', async (req, res) => {
       useVoiceChannel: body.useVoiceChannel,
     },
   });
-  return res.status(201).json(gameId);
+  return res.status(201).json(ad);
 });
 
 app.get('/games/:id/ads', async (req, res) => {
